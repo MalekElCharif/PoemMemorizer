@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login/Signup</title>
+        <link rel="icon" href="images/trackLogo.png">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+        <script>
+            
+            
+            function showSearch(){
+                if(document.getElementById("search-bar").className == "hidden"){
+                    document.getElementById("search-bar").className = "";
+                }
+                else{
+                    document.getElementById("search-bar").className = "hidden";
+                }
+            }
+        </script>
+    </head>
+    
+    <body>
+        <div class="container">
+            <div id="header">
+                
+                <div id="brand">
+                    <img src="images/trackLogo.png" id="brand">
+                </div>
+                <div id="links">
+                    <ul>
+                        <li class="#"><a href="index.html">Home</a></li>
+                        <li class="#"><a href="about.html">About</a></li>
+                        <li class="current"><a href="login.html">Login/Signup</a></li>
+                    </ul>
+                    <div id="search-container">
+                        <div id="search-bar" class="hidden">
+                            <input type="text" placeholder="Search on Google">
+                        </div>
+                        <button onclick="showSearch();" id="searchButton"><img src="images/1x/baseline_search_black_18dp.png"></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="main-section">
+                <fieldset style="height: 400px">
+                    <h3>Enter Information</h3>
+                    <form method="post" action="signup.php" style="text-align: left">
+                        <label>Name </label><input type="text" placeholder="Enter Name"><br><br>
+                        <label>Location </label>
+                        <select>
+                            <option>Saida</option>
+                            <option>Beirut</option>
+                            <option>Tripoli</option>
+                            <option>Baalbek</option>
+                            <option>Zahle</option>
+                            <option>Byblos</option>
+                        </select><br><br>
+                        <label>Telephone Number </label><input type="text" placeholder="Enter your number"><br><br>
+                        <label>Choose a username </label><input type="text" placeholder="Enter a username"><br><br>
+                        <label>Choose a password </label><input type="password" placeholder="Enter a password"><br><br>
+                        <br>
+                        <input type="submit" value="Sign Up" >
+                    </form>
+                    <a href="login.html">Already a user? Click here</a>
+                </fieldset>                
+            </div>
+        </div>
+    </body>
+    <footer>
+        I made this do not steal it
+    </footer>
+</html>

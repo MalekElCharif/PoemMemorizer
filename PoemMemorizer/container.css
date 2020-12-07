@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Helvetica;
+    background-color: rgb(234, 218, 219);
+    color: dimgray;
+}
+
+.container{
+    display: flex;
+    flex-flow: column wrap;
+    
+}
+
+.header{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: rgb(234, 218, 219);
+}
+
+.header #profile-pic{
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    border-radius: 200px;
+    
+}
+
+button{
+    height: 80px;
+    align-self: center;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    
+}
+
+
+
+li{
+    display: inline;
+    padding: 20px;
+    margin: 20px;
+}
+
+.links{
+    align-self: center;
+    position: sticky;
+    top: 250px;
+    width: 100%;
+    z-index: 10;
+    text-align: center;
+    background-color: rgb(234, 218, 219);  
+    margin-top: 200px;
+}
+
+a{
+    text-decoration: none;
+    color: dimgray;
+}
+
+.links a:hover{
+    color: darkgray;
+}
+
+.current{
+    border-bottom: 4px solid rgb(241, 94, 34);
+}
+
+.main-info{
+    width: 100%;
+    margin: auto;
+    padding: 50px 0;
+    position: relative;
+    text-align: center;
+}
+
+.main-info h3{
+    margin: 20px 0 7px 0;
+}
+
+.main-info h2{
+    margin-top:20px;
+}
+
+.main-info h4{
+    margin-top: 10px;
+}
+
+.main-info ul{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.tooltip{
+    position: relative;
+    display: inline-block;
+    border-bottom: 5px dotted dimgray;
+}
+
+.tooltip .tooltiptext{
+    visibility: hidden;
+    min-width: 200px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    margin: 10px 0 0 0;
+    border-radius: 6px;
+    display: inline;
+    position: absolute;
+    top: -13px;
+    left: 70px;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext{
+    visibility:visible;
+    
+}
+
+.main-info li{
+    display: block;
+}
+
+.main-info li a:hover{
+    color: red;
+    
+}

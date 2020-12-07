@@ -1,0 +1,212 @@
+*{
+    margin: 0; 
+    padding: 0;
+    font-family: Helvetica;
+}
+
+.container{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+body{
+    background-color: rgb(234, 218, 219);
+}
+
+#header{
+    height: 90px;
+    width: 80%;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: rgb(234, 218, 219);
+    position: sticky;
+    top: 0;
+    margin: auto;
+}
+
+#header button{
+    height: 90px;
+    width: 80px;
+    background-color: rgb(234, 218, 219);
+    border: none;
+}
+
+#menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+#header #brand{
+    height: 90px;
+    width: 80px;
+    flex: 1;
+    max-width: 80px;
+}
+
+#header ul{
+    flex: 1;
+    list-style: none;
+    max-width: 400px;
+}
+
+#header ul li{
+    display: inline-block;
+    line-height: 14px;
+    padding: 38px 4px;
+    width: 100px;
+    text-align: center;
+}
+#header #links{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.current a{
+    color: white !important;
+}
+
+
+#header ul li a{
+    text-decoration: none;
+    transition: font-weight 0.1s ease;
+    color: dimgray;
+}
+
+#header ul li a:hover{
+    color: darkgray;
+}
+
+.current{
+    background-color: rgb(241, 94, 34, 0.5);
+}
+
+
+#search-button{
+    height: 90px;
+    width: 40px;
+    border: none; 
+    outline: none;
+}
+
+
+#search-container{
+        display: flex;
+    justify-content: unset;
+    align-items: center;
+}
+
+.hidden{
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+#search-bar input{
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.container #main-section{
+    background-image: url(images/covid.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 646px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content:space-around;
+}
+
+
+.main-definition{
+    width: 80%;
+    text-align: center;
+    color: white;
+    border:none;
+    height: 250px;
+    background-color: rgba(241, 94, 34, 0.5);
+    position: -webkit-sticky;
+    top: 90px;
+    position: sticky;
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+.main-definition p, h3, ul{
+    text-align: left;
+    list-style: none;
+    padding: 0 10px;
+    opacity: 100%;
+}
+
+.main-definition button{
+    width: 200px;
+    height: 50px;
+    position:-webkit-sticky;
+    position: sticky;
+    top: 390px;
+    background-color: rebeccapurple;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#main-section button:hover{
+    opacity: 85%;
+    background-color: darkslateblue;
+    
+}
+
+#main-section fieldset{
+    width: 30%;
+    height: 200px;
+    border-radius: 10px;
+    background-color: rgba(241, 94, 34, 0.5);
+    border: none;
+    text-align: center;
+    justify-self: stretch;
+}
+
+#main-section fieldset h3{
+    text-align: center;
+    color: white;
+    padding-top: 5px;
+}
+
+#main-section fieldset legend{
+    margin-left: 30px;
+    color: white;
+}
+
+#main-section fieldset form{
+    padding: 20px;
+    text-align: center;
+}
+
+#main-section fieldset form input{
+    border-radius: 10px;
+    height: 20px;
+    margin-top: 10px;
+    min-width: 150px;
+    border: none;
+    outline: none;
+}
+
+label{
+    color: white;
+}
+
+#main-section fieldset form input[type="submit"]{
+    height: 40px;
+    background-color: rgb(210, 55, 50);
+    color: white;
+}
+
+#main-section fieldset form input[type="text"], input[type="password"]{
+    padding-left: 5px;
+}
